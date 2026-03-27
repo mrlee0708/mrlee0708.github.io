@@ -1,14 +1,105 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹 호스팅</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HCI Lab</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    git pages 입니다.
+  <div class="container">
+    <header class="header">
+      <div class="header-row">
+        <div class="brand">
+            <img src="images/white_verti.png" alt="HCI Lab Logo" class="logo">
+
+            <div>
+                <div class="brand-small">Daegu University</div>
+                <h1 class="brand-title">HCI Lab</h1>
+            </div>
+        </div>
+        <nav class="nav">
+          <a href="index.html" class="active">홈</a>
+          <a href="about.html">소개</a>
+          <a href="members.html">구성원</a>
+          <a href="research.html">연구</a>
+          <a href="projects.html">프로젝트</a>
+          <a href="publications.html">논문</a>
+          <a href="contact.html">연락처</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <div class="badge">Human-Centered AI Research</div>
+        <h2>사람 중심의 <span class="accent">AI + HCI</span> 연구실</h2>
+        <p>
+          HCI Lab은 인공지능과 인간-컴퓨터 상호작용의 융합을 바탕으로,
+          바이오신호, XR, 헬스케어 에이전트, 오픈소스 생태계를 아우르는
+          차세대 인터랙티브 시스템을 연구합니다.
+        </p>
+        <div class="btn-group">
+          <a class="btn-primary" href="research.html">연구 분야 보기</a>
+          <a class="btn-secondary" href="contact.html">컨택하기</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><strong>10+</strong><span class="label">진행 연구/프로젝트</span></div>
+          <div class="stat"><strong>20+</strong><span class="label">논문 및 성과</span></div>
+          <div class="stat"><strong>AX</strong><span class="label">AI eXperience 중심 연구</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-header" style="margin-bottom:18px;">
+          <div>
+            <div class="eyebrow">Lab Highlights</div>
+            <h3 style="font-size:28px;">핵심 정보</h3>
+          </div>
+        </div>
+        <div class="info-list">
+          <div class="info-item">
+            <div class="title">주요 키워드</div>
+            <div class="value">AX · HCI · XR · Biosignal · Agentic AI</div>
+          </div>
+          <div class="info-item">
+            <div class="title">소속</div>
+            <div class="value">대구대학교 컴퓨터정보공학부 HCI Lab</div>
+          </div>
+          <div class="info-item">
+            <div class="title">연구 방향</div>
+            <div class="value">Human-Centered Computing Environment</div>
+          </div>
+          <div class="info-item">
+            <div class="title">협력 분야</div>
+            <div class="value">Healthcare · Smart Environment · OSS Ecosystem</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section grid-3">
+      <div class="card">
+        <div class="eyebrow">About</div>
+        <h3 class="page-title">연구실 소개</h3>
+        <p class="text">연구실 비전, 교수 소개, 연구 방향을 담은 페이지입니다.</p>
+        <div class="btn-group"><a class="btn-primary" href="about.html">자세히 보기</a></div>
+      </div>
+      <div class="card">
+        <div class="eyebrow">Research</div>
+        <h3 class="page-title">연구 분야</h3>
+        <p class="text">AX+HCI, XR, 바이오신호, 헬스케어 에이전트 연구를 정리합니다.</p>
+        <div class="btn-group"><a class="btn-primary" href="research.html">자세히 보기</a></div>
+      </div>
+      <div class="card">
+        <div class="eyebrow">Projects</div>
+        <h3 class="page-title">프로젝트</h3>
+        <p class="text">수행 중인 연구 과제, 산학협력, 개발 중인 시스템을 소개합니다.</p>
+        <div class="btn-group"><a class="btn-primary" href="projects.html">자세히 보기</a></div>
+      </div>
+    </section>
+
+    <footer>© 2026 HCI Lab. All rights reserved.</footer>
+  </div>
 </body>
 </html>
-출처: https://devyihyun.tistory.com/203 [이롭게 현명하게:티스토리]
