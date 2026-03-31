@@ -415,3 +415,36 @@ footer {
     box-shadow: 0 14px 30px rgba(0,0,0,0.35);
     transition: all 0.3s ease;
 }
+
+.video-row {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap; /* 화면 작아지면 자동 줄바꿈 */
+}
+
+.video-box {
+  position: relative;
+  width: 48%;
+  padding-bottom: 27%; /* 16:9 비율 */
+  height: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.video-box iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* 모바일에서는 세로로 */
+@media (max-width: 768px) {
+  .video-box {
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+}
